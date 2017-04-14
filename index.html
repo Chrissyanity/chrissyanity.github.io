@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christina Lee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Homemade+Apple" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body ng-controller="portCtrl" ng-app="portfolioModule">
+
+
+
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="#/homepage" target="_self" ng-click="scrollTo('maincontent')" onclick="closeNav()">Home</a>
+            <a href="#/homepage" target="_self" ng-click="scrollTo('about')" onclick="closeNav()">About</a>
+            <a href="#/homepage" target="_self" ng-click="scrollTo('portfolio')" onclick="closeNav()">Projects</a>
+            <a href="#/homepage" target="_self" ng-click="scrollTo('contact')" onclick="closeNav()">Contact Me</a>
+        </div>
+
+    </div>
+
+
+    <span class="burgerSpan" onclick="openNav()">
+
+    <div class="hamburger"></div>
+<div class="hamburger"></div>
+<div class="hamburger"></div>
+<span class="navBttn"><p class="spanPara"><strong>Menu</strong></p></span>
+    </span>
+
+
+
+
+
+
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='scripts/module.js'></script>
+    <script src='scripts/controller.js'></script>
+    <script src='scripts/script.js'></script>
+
+</body>
+
+</html>

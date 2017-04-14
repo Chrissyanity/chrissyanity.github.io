@@ -1,0 +1,205 @@
+<header>
+    <div class="container" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="images/resizedheadshot.jpg" alt="">
+                <div class="intro-text">
+                    <h1 class="name">Christina Lee</h1>
+                    <hr class="star-light">
+                    <span class="skills">Front-End Developer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Me Section -->
+<section class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="sectionHeader">About</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <p class="aboutPara1">I am a recent graduate of Grand Circus' Front-End Bootcamp. During this immersive 10-week course I utilized JavaScript, HTML/CSS, jQuery, AngularJS and a host of other libraries and frameworks on a day-to-day basis.</p>
+                <p class="aboutPara1">Before deciding to make a career change into web development, I worked in the auto industry and also found time to start a Personal Concierge service here in Detroit. Although completely different from one another, both of these paths
+                    taught me how to lead and work with a team.</p>
+            </div>
+            <div class="col-lg-4">
+                <p class="aboutPara2">I believe people enjoy working with me because I am dedicated to any tasks put before me and will carry them out to the best of my ability while remaining oddly cheerful.</p>
+                <p class="aboutPara2">When I’m not working, I enjoy discovering new things around the city, spending hours at book stores, live-tweeting and binge-watch TV shows simultaneously and getting to know new people.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h3 class="subPara">Some of my skills include...</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div ng-repeat='home in homeImages'>
+                    <div class="clearfix" ng-if="$index % 4 == 0"></div>
+                    <div class="col-md-3">
+                        <img ng-src='{{home.source}}' alt="" class="skillsImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+</section>
+
+<!-- Recent Projects Section -->
+
+<section id="portfolio" class="middle">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="sectionHeader">Recent Projects</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+
+        <!-- Screenshot #1 -->
+        <div class="row">
+            <div class="col-sm-6 portfolio-item">
+                <article text-center>
+                    <figure class="preview text-center">
+                        <h2 class="projectHeaders">Bookmarkd</h2>
+                        <p class="projectPara">
+                            An interactive web application built with AngularJS and responsive Bootstrap.<br> This app provides digital rewards for children to encourage them to read often and to read beyond what is required.
+                        </p>
+                </article>
+                </figure>
+                <a href="https://bookmarkd-gc.herokuapp.com/">
+                    <img class="screenshots" src="images/bookmarkdShot.png" />
+                </a>
+            </div>
+
+            <!-- Screenshot #2 -->
+            <div class="col-sm-6 portfolio-item">
+                <article text-center>
+                    <figure class="preview text-center">
+                        <h2 class="projectHeaders">Interactive Theater Seating</h2>
+                        <p class="projectPara">
+                            An interactive web application built with AngularJS, Bootstrap and jQuery.<br> Patrons can reserve seats with just their name! Seats change color/opacity when seats are open or reserved.
+                        </p>
+                </article>
+                </figure>
+                <a href="http://chrissyanity.com/Theatre-Seat-Selector/">
+                    <img class="screenshots" src="images/theaterShot.png" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Screenshot #3 -->
+        <div class="row">
+            <div class="col-sm-6 portfolio-item">
+                <article text-center>
+                    <figure class="preview text-center">
+                        <h2 class="projectHeaders">Mad Lib Generator</h2>
+                        <p class="projectPara">
+                            This project uses AngularJS to create a kid-friendly story.<br> Different views allow for kids to fill in the form on one page, click a button and see their story come to life on the next.
+                        </p>
+                </article>
+                </figure>
+                <a href="http://chrissyanity.com/Lab-15/">
+                    <img class="screenshots" src="images/madLabsShot.png" />
+                </a>
+            </div>
+
+            <!-- Screenshot #4 -->
+            <div class="col-sm-6 portfolio-item">
+                <article text-center>
+                    <figure class="preview text-center">
+                        <h2 class="projectHeaders">Angular To-Do List</h2>
+                        <p class="projectPara">
+                            This project is all AngularJS and some styling.<br> Users can add new items to the list and filter their list by priority and/or chore so that they only see the tasks they want to do.
+                        </p>
+                </article>
+                </figure>
+                <a href="http://chrissyanity.com/Lab12/">
+                    <img class="screenshots" src="images/toDoListShot.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+</div>
+</section>
+
+<!-- Contact Info Section -->
+
+<section id="contact" class="contactArea">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="sectionHeader">Contact Me</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://github.com/Chrissyanity" target="_blank">
+                    <figure class="text-center">
+                        <img src="images/GitHub-Mark-120px-plus.png" />
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.linkedin.com/in/christinalee110/" target="_blank">
+                    <figure class="text-center">
+                        <img src="images/linkedInImg.png" />
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://twitter.com/ChristinaemLee" target="_blank">
+                    <figure class="text-center">
+                        <img src="images/Twitter_Logo_White_On_Blue.png" />
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="mailto:christinaemlee@gmail.com" target="_blank">
+                    <figure class="text-center">
+                        <img src="images/gmail-logo-icon-2.png" />
+                    </figure>
+                </a>
+            </div>
+        </div>
+</section>
+</div>
+
+
+<!-- Footer Section -->
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <footer class="text-center">
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    Copyright &copy; Christina Lee 2017
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</section>
+</footer>
+</div>
+</div>
+</div>
