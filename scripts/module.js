@@ -8,7 +8,7 @@ app.config(function($routeProvider, $locationProvider) {
         })
 
         .otherwise({
-            redirectTo: '/'
+            redirectTo: '/homepage'
         });
     $locationProvider.hashPrefix('');
 
